@@ -1,0 +1,127 @@
+
+      /*
+          Imagem degrade no fundo da página
+      */
+      body {
+          background-color: #eefdec;
+      }
+      .container {
+          /*
+              retira o espaço interno da classe ".container"
+          */
+          padding-left: 0px;
+          padding-right: 0px;
+      }
+
+      /* Coloca 20px antes da div=row que contém as guias  */
+      .padTop {
+          padding-top: 20px;
+      }
+
+      /*
+          Posiciona a div com texto sobre o carousel. O estilo "position: absolute" retira a div que recebe essa classe da sequência da página, permitindo que ela "flutue" sobre o carousel. Os estilos "top:0px" e "bottom:auto;" posicionam a div na parte de cima do carousel, porque essa div foi colocada logo após a div com id="meuCarousel", mas dentro da div "col-md-12" que contém o carousel (por isso ela não vai para o topo da página). O estilo "width:100%" permite centralizar corretamente o texto.
+      */
+      .textoCarousel {
+          position: absolute;
+          top: 0px;
+          width: 100%;
+          color: rgb(255,255,0);
+          bottom: auto;
+      }
+      
+      .nav-tabs>li.active>a:focus,
+      .nav-tabs>li.active>a {
+          background-color: #87CEEB;
+          color: #1C1C1C;
+          font-family: verdana;
+      }
+      .nav-tabs>li>a,
+      .tab-content>div>h2,
+      .tab-content>div>p {
+          font-family: verdana;
+          color: #1C1C1C;
+      }
+  
+      .navbar{
+          background-color: #126017;
+      }
+      td{
+          background-color: lightgreen;
+      }
+      .input-content{
+          width: 40%;
+          height: 37px;    
+          padding-left: 5px;
+          box-sizing: border-box;
+          border-radius: 5px;
+          border: 3px solid #000000;
+      }
+
+      .modal-header {
+      padding: 2px 16px;
+      background-color: #5cb85c;
+      color: white;
+      }
+
+      .modal-body {padding: 2px 16px;}
+
+      .modal-footer {
+      padding: 2px 16px;
+      background-color: #5cb85c;
+      color: white;
+      }
+
+      .modal-content {
+      position: relative;
+      background-color: #fefefe;
+      margin: auto;
+      padding: 0;
+      border: 1px solid #888;
+      width: 80%;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+      animation-name: animatetop;
+      animation-duration: 0.4s
+      }
+
+      @keyframes animatetop {
+      from {top: -300px; opacity: 0}
+      to {top: 0; opacity: 1}
+      }
+
+      .close {
+      color: #aaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+      }
+
+      .close:hover,
+      .close:focus {
+      color: red;
+      text-decoration: none;
+      cursor: pointer;
+      }
+      .text-input {
+          font-size: 17px;
+          margin-top: 25px;
+      }
+      h1 {
+          margin-bottom: 0px;
+      }
+      .btn-VRA {
+          margin-top: 25px;
+          margin-left: 20px;
+          width: 200px; 
+          height: 34px;
+          background-color: #2ECC71;
+          font-size: 17px;
+          box-shadow: 3px 3px 0px #000;
+          border-radius: 5px;
+          /*transition: transform 300ms cubic-bezier(0.25, 0.1, 0.25, 1.0);*/
+      }
+      /*
+      .btn-VRA:hover {
+          transform: scale(1.1);
+          transition: transform 300ms cubic-bezier(0.25, 0.1, 0.25, 1.0);
+      }
+      */

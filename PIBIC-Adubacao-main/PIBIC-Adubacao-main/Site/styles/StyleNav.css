@@ -1,0 +1,38 @@
+.sem-margem {
+    margin: 0;
+}
+
+.sm {
+    margin: 0px;
+    border-top: black solid 2px;
+}
+
+.padDireita {
+
+    padding-right: 15px;
+    font-size: 18px;
+    margin-top: 16px;
+}
+
+.navbar{
+    background-color: #126017;  
+}
+.top{
+    border-bottom:black solid 2px;
+    height: 150px;
+}
+
+.bot{
+    height: 90px;
+}
+
+.img-ifrj {
+    width: 360px;
+    height: auto;
+}
+
+#nav-contato {
+	position: fixed;
+	top:84.7%;
+	width: 100%;
+}

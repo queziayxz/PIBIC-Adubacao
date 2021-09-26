@@ -1,0 +1,22 @@
+body {
+    background-color: #eefdec;
+}
+p{
+    text-align: left;
+}
+.btn-info {
+    padding-top: 6px;
+    width: 200px;
+    height: 40px;
+    font-size: 17px;
+    color: black;
+    background-color: #2ECC71;
+    box-shadow: 4px 4px 0px #000;
+    transition: transform 300ms cubic-bezier(0.25, 0.1, 0.25, 1.0);
+}
+.btn-info:hover {
+    transform: scale(1.1);
+    transition: transform 300ms cubic-bezier(0.25, 0.1, 0.25, 1.0);
+    color: black;
+    padding-top: 6px;
+}

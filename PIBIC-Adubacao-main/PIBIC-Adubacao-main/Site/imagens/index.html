@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+	<title>Início</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="imagem/png" href="../../imagens/favicon.png">
+	<link href="../../../bootstrap/css/bootstrap.css" rel="stylesheet">
+	<link rel="stylesheet" href="../../styles/StyleNav.css">
+	<link rel="stylesheet" href="style.css">
+	<!-- 
+    Para mudar a cor da navbar, entre no site https://work.smarchal.com/twbscolor/css/e74c3cc0392becf0f1ffbbbc0
+	-->
+	
+	<script src="../../../bootstrap/js/jquery-2.2.4.min.js"></script>
+	<script src="../../../bootstrap/js/bootstrap.min.js"></script>
+</head>
+<body>
+		<nav class="navbar navbar-default navbar-static-top sem-margem" style="padding: 45px;">  
+			<div class="navbar-header">
+				<div class="row">
+					<div class="col-md-12">
+						<img class="img-ifrj" src="../../imagens/logo-ifrj.png"/>
+					</div>
+				</div>
+				<button type="button" class="navbar-toggle" data-toggle="collapse"
+						data-target="#navBar">
+					<span class="sr-only">Toggle header</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+			<div class="collapse navbar-collapse" id="navBar">
+				
+				<!-- menu alinhado à direita com a classe ".padDireita" -->
+				<ul class="nav navbar-nav navbar-right padDireita">
+					<li><a href="../home/index.html" style="color: white;">Inicio</a></li>
+					<li><a href="../contato/contato.html" style="color: white;">Contato</a></li>
+					<li><a href="../saiba mais/saibaMais.html" style="color: white;">Saiba Mais</a></li>
+					<li><a href="../solver/FERRAMENTASOLVER.html" style="color:white;">Ferramenta Solver</a></li>
+				</ul>
+			</div>
+	</nav>
+
+				
+		
+	  	<div class="jumbotron" style="text-align: center; background-color: #eefdec" >
+			<h2 >Calculo de Otimização da Adubação no Campo</h2>
+			<hr>
+			<p style="margin: 12px;">Este programa irá calcular qual a composição do adubo orgânico misto pode satisfazer todas as necessidades nutricionais de NPK da sua cultura e, ao mesmo tempo, ser a composição mais barata possível. O agricultor precisará informar:</p><br>
+			<div class="col-sm-6">
+				<p style="margin-left: 50px">1 – Quais as necessidades nutricionais de sua cultura.</p>
+				<p style="margin-left: 50px">2 – Qual a composição de NPK dos seus adubos.</p>
+				<p style="margin-left: 50px">3 – Qual o preço que irá pagar de cada adubo.</p>
+				<p style="text-align: left; margin: 1px; margin-top: 30px; margin-bottom: 30px;">A ferramenta NÃO FUNCIONARÁ caso algum dos adubos tiver custo zero. Se uma das fontes de adubo for de fato gratuita, deve-se calcular quanto de NPK tem a quantidade gratuita disponível a ser utilizada, e subtrair esta quantidade das necessidades nutricionais da cultura e depois proceder a alimentação do programa SEM O ADUBO GRATUITO. </br>
+				Programa desenvolvido para calcular a composição do adubo orgânico em que ocorre a mistura de 2 ou mais fontes de adubo. Caso o usuário informe apenas uma fonte, o resultado será o mesmo, independente do preço do adubo a ser usado.
+				</p>
+			</div>
+			<div class="col-sm-6" style="text-align: left; margin-bottom: 60px;">
+				<img class="img-responsive" src="../../imagens/campo.png"/>
+			</div>
+			<br><br><br>
+			<br><p style="text-align: center; margin: 12px;margin-bottom: 30px; font-size: 200%;"><b>Clique no botão abaixo para calcular:</b></p>
+			<div class="col-sm-12"  style="margin-top: 5px;	">
+				<a href="../cálculo/calculo.html" class="btn btn-info" role="button">Calcular</a>
+			</div>
+		</div>
+		<footer class="navbar navbar-default navbar-static-top sm "style="padding: 25px;">
+			<p class="navbar-text" style="color: white">© Copyright 2020- Todos direitos reservados</p>
+		</footer>
+
+
+</body>
+</html>

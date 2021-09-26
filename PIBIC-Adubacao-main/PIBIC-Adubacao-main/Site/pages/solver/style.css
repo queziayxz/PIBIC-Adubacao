@@ -1,0 +1,32 @@
+body {
+	background-color: #eefdec;
+}
+
+.ul-none{
+	list-style: none;
+}
+
+.ul-none li{
+	color: #1C1C1C;
+	text-align: left;
+	font-size: 18px;
+	font-weight: bold;
+	margin-right: 10px;
+}
+
+p {
+	text-align: justify;
+	margin: 14px;
+	font-size: 16px;
+}
+
+.img-guia{
+	border: 1px solid #000000;
+	margin-left: -87px;
+	margin-bottom: 40px;
+	width: 1040px;
+}
+
+.img-size{
+	width: 650px;
+}

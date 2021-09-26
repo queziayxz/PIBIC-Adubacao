@@ -1,0 +1,35 @@
+.container {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.padTop {
+	padding-top: 20px;
+}
+
+.img-integrantes{
+	width: 160px;
+	height: 175px;
+	margin-top: 20px;
+	margin-left: 8px;
+	border: 1px solid black;
+}
+h2 {
+	font-size: 28px;
+}
+.redes-sociais {
+	border-top: 1px solid rgba(255,255,255,0.20);
+	margin:  -20px 0px;
+	padding: 30px;
+}
+.redes-sociais li {
+	margin: 10px 12px;
+	display: inline-block;
+}
+.redes-sociais li a img {
+	width: 47px;
+	transition: .2s;
+}
+.redes-sociais li a:hover img {
+	transform: scale(1.1) translateY(-6px);
+}

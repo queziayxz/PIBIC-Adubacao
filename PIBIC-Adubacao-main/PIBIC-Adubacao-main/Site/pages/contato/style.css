@@ -1,0 +1,12 @@
+.container {
+    /*
+        retira o espaço interno da classe ".container"
+    */
+    padding-left: 0px;
+    padding-right: 0px;
+}
+/* Coloca 20px antes da div=row que contém as guias  */
+p{
+    margin: 30px;
+    text-align: left; 
+}

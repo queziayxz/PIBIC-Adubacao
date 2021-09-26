@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ferramenta Solver</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="imagem/png" href="../../imagens/favicon.png">
+	<link href="../../../bootstrap/css/bootstrap.css" rel="stylesheet">
+	<link rel="stylesheet" href="../../styles/StyleNav.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<!-- 
+    Para mudar a cor da navbar, entre no site https://work.smarchal.com/twbscolor/css/e74c3cc0392becf0f1ffbbbc0
+-->
+
+	<script src="../../../bootstrap/js/jquery-2.2.4.min.js"></script>
+	<script src="../../../bootstrap/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<nav class="navbar navbar-default navbar-static-top sem-margem top"	style="padding: 45px;">  
+		<div class="navbar-header">
+			<div class="row">
+				<div class="col-md-12">
+					<img class="img-responsive img-ifrj" src="../../imagens/logo-ifrj.png"/>
+				</div>
+			</div>
+			<button type="button" class="navbar-toggle" data-toggle="collapse"
+			data-target="#navBar">
+			<span class="sr-only">Toggle header</span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			</button>
+		</div>
+	<div class="collapse navbar-collapse" id="navBar">
+		<!-- menu alinhado à direita com a classe ".padDireita" -->
+		<ul class="nav navbar-nav navbar-right padDireita">
+			<li><a href="../home/index.html" style="color: white;">Inicio</a></li>
+			<li><a href="../contato/contato.html" style="color: white;">Contatos</a></li>
+			<li><a href="../saiba mais/saibaMais.html" style="color: white;">Saiba Mais</a></li>
+			<li><a href="../solver/solver.html" style="color:white;">Ferramenta Solver</a></li>
+		</ul>
+	</div>
+	</nav>
+
+	<div class="jumbotron" style="text-align: center; background-color: #eefdec">
+		<h2>Como utilizar a ferramenta Solver</h2>
+		<hr>
+		<ul class="ul-none">
+			<li>O que é o Solver ?</li>
+			<p>O Solver é uma ferramenta excelente para quem deseja testar hipóteses através do Excel, essa ferramenta permite quem a usar, achar um valor através da especificação de uma fórmula em uma célula. Ele pode determinar um valor máximo ou um valor mínimo de uma célula através de outras células, mesmo que seus valores sejam alterados.</p><br>
+			<li>Como ativar o Solver ?</li>
+			<p>Para começar a usar essa ferramenta, deve-se primeiro ativá-la no Excel, já que por padrão ela vem desativada.</p>
+			<ol start="1">
+				<li>Para isso comece clicando em “Arquivo” no menu de navegação do Excel, presente na parte superior do programa.</li>
+				<img src="images/Image1.png"  class="img-guia" style="width: 1200px;">
+				<li>Em seguida, procure por “Opções” no menu de navegação lateral que se abrirá, posicionado como última opção na lateral esquerda do programa, conforme exemplificado abaixo.</li>
+				<img src="images/image11.png" class="img-guia">
+				<li>Ao abrir uma janela “Opções do Excel” procure pela opção “Suplementos” no menu lateral, em seguida, uma das últimas opções antes dos botões “Ok” e “Cancelar” será um texto “Gerenciar:” seguido de uma caixinha de seleção que por padrão terá escrita “Suplementos de Excel” seguida de um botão “Ir…”.
+				</li>
+				<img src="images/image13.png" class="img-guia" style="width: 800px;">
+				<li>Clique no botão “Ir…”, em seguida marque a caixinha que contém a opção “Solver” e clique no botão “Ok”, conforme mostra a imagem abaixo.</li>
+				<img src="images/image7.png" class="img-guia" style="width: 400px;">
+				<p style="margin-left: -40px;margin-bottom: 50px;">Pronto, isso é o suficiente para que a ferramenta Solver esteja ativa no Excel e pronta para ser usada!</p>
+			</ol>
+			<li>Exemplo prático</li>
+			<p>Para ajudar a resolver um problema, é importante que estejam definidos os valores específicos para que sejam agrupados e resolvidos. Antes de começar a montar a função para resolução, é essencial ter em mente quais são as <b>incógnitas</b> que serão solucionadas pelo problema, os <b>limites</b> para que as incógnitas não sejam infinitas e um objetivo para que junto com as incógnitas e os limites, seja atingido.</p>
+			<p>Como exemplo, utilizaremos um pet shop que pretende fazer um anúncio de seus serviços em algumas mídias e deseja calcular o valor total de anúncios de acordo com a quantidade desejada.</p>
+			<ol start="1">
+				<li>Supondo que tenhamos essa planilha com os tipos de anúncios desejados, seus preços e suas quantidades já estabelecidas:</li>
+				<img src="images/image6.png" class="img-guia img-size">
+				<li>Existe uma fórmula padrão do Excel para que possamos calcular a multiplicação entre dois valores, ela se dá inserindo o símbolo do igual (=) seguido da localização do primeiro valor, com dois pontos no meio (:) e o segundo valor. Ex: “=A1*B2”</li>
+				<p style="margin-left: 15px;">Sabendo disso, iremos calcular o total de cada um dos anúncios:</p>
+				<img src="images/image8.jpg" class="img-guia img-size">
+				<p>Que após a inserção da fórmula de SOMA, deverá ficar assim:</p>
+				<img src="images/image10.png" class="img-guia img-size">
+				<li>Após ter o total de cada um dos anúncios, vamos calcular também o custo total de todos eles com a fórmula “=SOMA(localização do primeiro valor : localização do segundo valor)”:</li>
+				<img src="images/image1.jpg" class="img-guia img-size">
+				<li>Suponhamos que então, surge uma ONG de animais disposta a patrocinar o pet shop com R$10.000,00 em pelo menos um anúncio por mídia.</li>
+				<img src="images/image5.jpg" class="img-guia img-size" style="margin-bottom: 100px;">
+			</ol>
+			<li>Como utilizar o Solver?</li>
+			<p>Podemos, finalmente, utilizar o Solver para fazer esse cálculo. Seguindo o raciocínio explicado anteriormente, as incógnitas seriam quanto a ONG disponibilizaria por anúncio, os limites são a quantidade de anúncios e o total pago e o objetivo é saber quanto pode ser investido em cada mídia contando com esse patrocínio.</p>
+			<ol start="1">
+				<li>Novamente no menu de navegação superior do Excel, procure pela aba “Dados”, e então pela opção “Solver” que estará na última seção, denominada “Análise” e será a última opção, conforme mostra a imagem a seguir:</li>
+				<img src="images/image12.png" class="img-guia" style="width: 1200px;">
+			</ol>
+			<p>Na janela que irá se abrir:</p>
+			<p><b>“Definir Objetivo”</b> = será o objetivo que queremos alcançar utilizando o SOLVER, portanto será a célula onde se encontra o valor total  necessário para custear os anúncios (D8).</p>
+			<p><b>“Para”</b> = serve como um parâmetro para alcançar o objetivo, você pode escolher entre um valor máximo, um valor mínimo ou um valor fixo. Nesse caso usaremos a opção “Valor de:” que será a verba disponível pela ONG (R$10.000).</p>
+			<p><b>“Alterando Células Variáveis"</b> = é onde definiremos o intervalo de células variáveis dentro da planilha, esse intervalo pode ser selecionado manualmente, se clicado no botão posicionado no final do campo.</p>
+			<p><b>“Sujeito às Restrições”</b> = Local onde é possível adicionar restrições de como tratar os dados. Como estamos tratando número inteiros, precisamos inserir essa restrição, clicando no botão “Adicionar” você abrirá o seguinte menu:</p><br>
+			<img src="images/image3.jpg" class="img-guia" style="width: 610px;">
+			<p>Nesse menu, a “Referência de Célula” será o intervalo selecionado manualmente, o campo ao lado varia de acordo com o tipo de dados que está sendo tratado, nesse caso “número inteiro”.<br><br>
+			Clique em “OK” após terminar de inserir as restrições de tratamento de dados. Com essas configurações feitas, a janela “Parâmetros do Solver” deve ficar dessa forma:</p>
+			<img src="images/image4.jpg" class="img-guia img-size" >
+			<p>Clicando em “Resolver” abrirá outra janela “Resultados do Solver” onde você deverá marcar a opção “Manter Solução do Solver” para que os resultados possam ser vistos na planilha.</p>
+			<img src="images/image2.png" class="img-guia img-size">
+			<p>Clique em “OK” e perceba que sua planilha já apresentou algumas alterações.<br><br>
+			Prontinho, você já pode usar o <b>SOLVER!</b></p>
+		</ul>
+	</div>
+
+	<nav class="navbar navbar-default navbar-static-top sm bot" style="padding: 25px;">
+		<p class="navbar-text" style="color: white">© Copyright 2020- Todos direitos reservados</p>
+	</nav>
+</body>
+</html>
