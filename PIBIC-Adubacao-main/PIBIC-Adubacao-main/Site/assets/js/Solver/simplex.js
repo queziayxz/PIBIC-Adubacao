@@ -76,6 +76,8 @@ var browserName = navigator.appName;
 
 var browserVersion = navigator.appVersion;
 
+var controlInput = 0;
+
 if ((browserName == "Netscape") && (parseInt(browserVersion) >= 3)) browserName = "N";
 
 else if ((browserName == "Microsoft Internet Explorer") && (parseInt(browserVersion) >= 3)) browserName = "M";
@@ -1973,30 +1975,43 @@ function stripChar(InString, symbol) {
 
 }
 
+function Control(){
+	if(confirm("Tem certeza que irá usar somente um adubo? Se sim, clique em ok") == true){
+		controlInput = 1; 
+		Start();	
+	}
+}
 
 function Start() {
-	if (CheckPageCompletion("advance")) {
-		UpdatePage();
-		okToRoll = true;
-		var accuracydig = 4;
-		if ((accuracydig == "") || (!looksLikeANumber(accuracydig))) {
-			okToRoll = false;
-		}
-		if (okToRoll) {
-			var thenum = eval(accuracydig);
-			if ((thenum < 1) || (thenum > 14)) {
+	if(controlInput >= 1){
+		if (CheckPageCompletion("advance")) {
+			UpdatePage();
+			okToRoll = true;
+			var accuracydig = 4;
+			if ((accuracydig == "") || (!looksLikeANumber(accuracydig))) {
 				okToRoll = false;
-			} else {
-				numSigDigs = thenum;
-				TableauNumber = 1;
-				lastvalue = "";
-				SetupTableau(CreateString(elements));
-				theTableau = simplexMethod(theTableau, numRows, numCols);
-				CreateResultText(lastvalue);
-				document.getElementById("modalResultado").style.display = "inline";
 			}
+			if (okToRoll) {
+				var thenum = eval(accuracydig);
+				if ((thenum < 1) || (thenum > 14)) {
+					okToRoll = false;
+				} else {
+					numSigDigs = thenum;
+					TableauNumber = 1;
+					lastvalue = "";
+					SetupTableau(CreateString(elements));
+					theTableau = simplexMethod(theTableau, numRows, numCols);
+					CreateResultText(lastvalue);
+					document.getElementById("modalResultado").style.display = "inline";
+				}
+			}
+			console.log(controlInput);
+			console.log(page);
 		}
 	}
+	else{
+		Control();
+	}	
 }
 
 //Auxiliary Functions
@@ -2116,6 +2131,7 @@ function LockNPK() {
 		K.readOnly = true;
 		K.style.backgroundColor = "lightgrey";
 	}
+	controlInput += 1; 
 }
 
 function CheckPageCompletion(mode) {
@@ -2247,6 +2263,7 @@ function RemovePage() {
 	} catch (e) {
 		console.log(e);
 	}
+	controlInput -= 2;
 }
 
 function AdvancePage() {
